@@ -1,5 +1,186 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: "IBM Plex mono", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--accent-color);
+  background-image: var(--backgroung-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  block-size: 100vh;
+  min-width: 375px;
+  min-height: 668px;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  right: 10px;
+  top: 10px;
+  border-top: 1px solid var(--decoration-color);
+  border-right: 1px solid var(--decoration-color);
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  left: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-left: 1px solid var(--decoration-color);
+  border-bottom: 1px solid var(--decoration-color);
+}
+
+.decorated-element {
+  position: absolute;
+  color: var(--accent-color);
+  top: 10px;
+  right: 40px;
+}
+
+.decorated-element::after {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  top: 8px;
+  left: 44px;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header__title {
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 83%;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  margin-inline-start: 10px;
+}
+
+.header__subtitle {
+  align-self: center;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  margin-block-end: 10px;
+}
+
+.title-decor {
+  color: var(--subtitle-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.header__theme-menu {
+  display: grid;
+  align-content: center;
+}
+
+.header__theme-menu-list {
+  color: var(--decoration-color);
+  display: grid;
+  margin-inline-end: 13px;
+  margin-block-start: 10px;
+  justify-self: end;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  border: transparent;
+  background: none;
+  text-transform: lowercase;
+  line-height: 18px;
+  cursor: pointer;
+  appearance: none;
+  padding: 4px 10px;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid currentColor;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--btn-hover-border-color);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid currentColor;
+  pointer-events: none;
+}
+
+@media (width >= 768px) {
+  .decorated-zone::before {
+    right: 20px;
+    top: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .decorated-element {
+    top: 20px;
+    right: 45px;
+  }
+  .decorated-element::after {
+    content: "";
+    left: 39px;
+  }
+
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__subtitle {
+    display: grid;
+    justify-self: end;
+    width: 47%;
+    margin-inline-end: 20px;
+    margin-block-end: 30px;
+  }
+
+  .header__theme-menu-list {
+    display: grid;
+    justify-self: end;
+    margin-block-start: 20px;
+    margin-inline-end: 23px;
+    gap: 10px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__subtitle {
+    width: 48%;
+    margin-block-end: 20px;
+  }
+
+  .header__theme-menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 20px;
+    margin-inline-start: 25px;
+    gap: 17px;
+    justify-content: center;
+  }
 }
