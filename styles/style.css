@@ -150,7 +150,7 @@
   row-gap: 20px;
 }
 
-.articles-container-column {
+.articles-container-section-decrease {
   grid-template-columns: 1fr;
 }
 
@@ -365,7 +365,7 @@
     width: 30%;
   }
 
-  .articles-container-column {
+  .articles-container-section-decrease {
     column-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     align-items: baseline;
