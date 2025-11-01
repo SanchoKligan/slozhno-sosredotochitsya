@@ -255,7 +255,6 @@
   }
 
   .header__theme-menu-list {
-    justify-self: end;
     margin-block-start: 17px;
     margin-inline-end: 20px;
   }
@@ -353,11 +352,6 @@
     gap: 11px;
   }
 
-  .main {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .section-hard-to-concentrate {
     grid-template-columns: 1fr 2fr;
     gap: 10px;
@@ -372,7 +366,6 @@
   }
 
   .articles-container-column {
-    display: grid;
     column-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     align-items: baseline;
