@@ -9,3 +9,7 @@
 - HTML5
 - CSS3
 - JavaScript
+
+## Ссылка на проект
+
+https://github.com/SanchoKligan/slozhno-sosredotochitsya
