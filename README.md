@@ -9,7 +9,3 @@
 - HTML5
 - CSS3
 - JavaScript
-
-## Ссылка на проект
-
-https://sanchokligan.github.io/mesto-project-ff/
