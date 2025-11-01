@@ -95,8 +95,8 @@
 .header__theme-menu-list {
   color: var(--decoration-color);
   display: grid;
-  margin-inline-end: 13px;
-  margin-block-start: 10px;
+  margin-inline-end: 11px;
+  margin-block-start: 7px;
   justify-self: end;
   gap: 13px;
 }
@@ -257,9 +257,9 @@
   .header__theme-menu-list {
     display: grid;
     justify-self: end;
-    margin-block-start: 20px;
-    margin-inline-end: 23px;
-    gap: 10px;
+    margin-block-start: 17px;
+    margin-inline-end: 20px;
+    gap: 13px;
   }
 
   .main {
@@ -349,8 +349,9 @@
     display: flex;
     flex-direction: row;
     margin-block-start: 20px;
-    margin-inline-start: 25px;
+    margin-inline-start: 20px;
     justify-content: center;
+    gap: 11px;
   }
 
   .main {
