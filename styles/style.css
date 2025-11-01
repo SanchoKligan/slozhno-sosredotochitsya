@@ -50,7 +50,7 @@
   position: absolute;
   color: var(--accent-color);
   top: 10px;
-  right: 40px;
+  right: 39px;
 }
 
 .decorated-element::after {
@@ -98,7 +98,7 @@
   margin-inline-end: 13px;
   margin-block-start: 10px;
   justify-self: end;
-  gap: 10px;
+  gap: 13px;
 }
 
 .header__theme-menu-button {
@@ -107,7 +107,7 @@
   text-transform: lowercase;
   cursor: pointer;
   appearance: none;
-  padding: 0 10px;
+  padding: 0 13px;
 }
 
 .header__theme-menu-button:focus {
@@ -233,12 +233,12 @@
 
   .decorated-element {
     top: 20px;
-    right: 45px;
+    right: 49px;
   }
 
   .decorated-element::after {
     content: "";
-    left: 39px;
+    left: 43px;
   }
 
   .header__title {
@@ -350,7 +350,6 @@
     flex-direction: row;
     margin-block-start: 20px;
     margin-inline-start: 25px;
-    gap: 17px;
     justify-content: center;
   }
 
